@@ -1,6 +1,7 @@
 import React from 'react'
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 const Navbar =()=>{
@@ -18,7 +19,7 @@ const Navbar =()=>{
             <Link className="item"  to="/about">Residence </Link>
           </li>
           <li className="item">
-            <Link className="item"  to="/project">Events </Link>
+            <Link className="item"  to="/events">Events </Link>
           </li>
           <li className="item">
             <Link className="item"  to="/aboutKiet">About</Link>
@@ -29,7 +30,7 @@ const Navbar =()=>{
         </ul>
         <button className="nav-icon"
         onClick={()=> setIcon(!icons)}>
-        {icons ? <CloseIcon /> : <DehazeIcon />  }
+        {icons ? <CloseIcon /> :  <MenuIcon className='icon'/>}
           </button>
       </div>
     </section>

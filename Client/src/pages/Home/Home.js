@@ -10,43 +10,46 @@ import { AiOutlineInstagram, AiFillYoutube } from "react-icons/ai";
 import EventCard from "../../components/RythemEvent/EventCard.js";
 import Landing from '../../components/Landing/Landing';
 import Navbar from '../../components/Navbar/Navbar';
+import Footer from "../../components/Footer/Footer.js";
 
 const Home = () => {
     return (
         <>
-        
+         <Navbar/>
         <section className='vid-1  sec-vid'>
-            <Navbar/>
             <Landing/>
         </section>
             <section className='bg-1 sec'>
                 <EventCard />
             </section>
             <section className='bg-2 sec sec-new'>
-                <div className='sec-eve-nam'>UPCOMING EVENTS</div>
+                <div className='sec-eve-nam'><span className='land-head-span'>UPCOMING</span>  EVENTS</div>
                 <div className='sec-det-eve'>Best Music Events</div>
             </section>
             <section className=' sec-new bg-3 sec'>
-
-                <div className='sec-eve-day'>Friday</div>
+<div className='eve-box'><div className='sec-eve-day'>Friday</div>
                 <div className='sec-eve-day' >2/3/2022</div>
-                <div className='sec-eve-nam'>King's Day Dance Party</div>
-                <div className='sec-det-eve'>DJ SUPBASS / GROOVES / DJ ROOTBOY</div>
-                <button className='btn' >Get Ticket</button>
+                <div className='sec-eve-nam'><span className='land-head-span'>सुर-ए</span> -SAAZ</div>
+                <div className='sec-det-eve'>GROUP SINGING</div>
+                <button className='btn' >Get Ticket</button></div>
+                
             </section>
             <section className='sec-new bg-4 sec'>
-                <div className='sec-eve-day'>SATURDAY</div>
-                <div className='sec-eve-day' >22/10/2016</div>
-                <div className='sec-eve-nam'>BIG CITY LIGHTS PARTY</div>
-                <div className='sec-det-eve'>DJ SUPBASS / GROOVES / DJ ROOTBOY</div>
-                <button className='btn' >Get Ticket</button>
+            <div className="eve-box"><div className='sec-eve-day'>SATURDAY</div>
+                <div className='sec-eve-day' >2/3/2022</div>
+                <div className='sec-eve-nam'><span className='land-head-span'>PRAC</span>HAND</div>
+                <div className='sec-det-eve'>NUKKAD NATAK</div>
+                <button className='btn' >Get Ticket</button></div>
+                
             </section>
             <section className='sec-new bg-5 sec'>
-                <div className='sec-eve-day'>SUNDAY</div>
-                <div className='sec-eve-day' >23/10/2016</div>
-                <div className='sec-eve-nam'>COCKTAIL LONG NIGHT PARTY</div>
-                <div className='sec-det-eve'>DJ SUPBASS / GROOVES / DJ ROOTBOY</div>
-                <button className='btn' >Get Ticket</button>
+                <div className="eve-box"> <div className='sec-eve-day'>SUNDAY</div>
+                <div className='sec-eve-day' >2/3/2022</div>
+                <div className='sec-eve-nam'> <span className='land-head-span'>BATTLE</span> OF </div>
+                <div className='sec-eve-nam'>BANDS</div>
+                <div className='sec-det-eve'>BAND WAR</div>
+                <button className='btn' >Get Ticket</button></div>
+               
             </section>
 
             <section><Gallary /></section>
@@ -61,29 +64,30 @@ const Home = () => {
                     <div className='icon-card'>
                         <BsPhone className='icon' />
                         <div className='icon-h1'>Phone</div>
-                        <div className='icon-h2'>1-800-123-1234</div>
+                        <div className='icon-h2'>8299550885</div>
                     </div>
                     <div className='icon-card'>
                         <GoLocation className='icon' />
                         <div className='icon-h1'>Address</div>
-                        <div className='icon-h2'>BROOKLYN, NY 10036, UNITED STATES</div>
+                        <div className='icon-h2'>MUSKAN HOSTEL KIET</div>
                     </div>
                     <div className='icon-card'>
                         <FiMail className='icon' />
                         <div className='icon-h1'>Mail</div>
-                        <div className='icon-h2'>CLUB@EMAIL.NET</div>
+                        <div className='icon-h2'>aryantiwari@mail.com</div>
                     </div>
                 </section>
             </section>
             <section className="bg-7 sec sec-new">
-                <div className="sec-eve-nam i">PRASTUTI</div>
+                <div className="sec-eve-nam i"><span className='land-head-span'>PRAS</span>TUTI</div>
                 <div className="venue gap">
-                    <FaFacebookF className='footer-icon'/>
-                    <AiOutlineInstagram className='footer-icon'/>
-                    <FaTwitter className='footer-icon'/>
-                    <AiFillYoutube className='footer-icon'/>
+                   <a className='icon-link' href=""><FaFacebookF className='footer-icon'/></a> 
+                   <a className='icon-link' href=""><AiOutlineInstagram className='footer-icon'/></a> 
+                  <a className='icon-link' href=""><FaTwitter className='footer-icon'/></a>  
+                   <a className='icon-link' href=""><AiFillYoutube className='footer-icon'/></a> 
                 </div>
             </section>
+            <Footer />
         </>
     )
 
