@@ -2,9 +2,7 @@
 
 .main{
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url("../../assets/AboutKietImages/5.jpg");
-    width: 100%;
-    
-     
+    /* width: 100%; */
 }
 .moc{
     margin-left: 5%;
@@ -61,8 +59,8 @@
 }
 
 .img{
-  width: 90vmin;
-  border-radius: 50px;
+  width: 80vmin;
+  border-radius: 30px;
   /* box-shadow: 0px 0px 20px 5px rgb(116, 115, 115); */
   
   filter: saturate(200%);
@@ -111,3 +109,36 @@
 
 /* -------------------------------------aboutprastutistart--------------------------- */
 
+.pras{
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    word-spacing: 2px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    text-align: center;
+    color: white;
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 70vw;
+
+}
+.allcard{
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 2em;
+    border-radius: 40px;
+    margin: 20px;
+}
+
+
+.font-card{
+  padding: 1em;
+}
